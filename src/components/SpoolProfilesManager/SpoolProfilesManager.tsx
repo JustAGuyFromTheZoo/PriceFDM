@@ -320,13 +320,6 @@ const SpoolProfilesManager: React.FC<Props> = ({ spools, onUpdate }) => {
               Импорт из Slicer
             </Button>
           </Tooltip>
-          <input
-            ref={zipInputRef}
-            type="file"
-            accept=".zip,application/zip"
-            style={{ display: 'none' }}
-            onChange={handleZipFile}
-          />
           <Button variant="contained" startIcon={<AddIcon />} onClick={openNew}>
             Добавить
           </Button>
@@ -470,6 +463,13 @@ const SpoolProfilesManager: React.FC<Props> = ({ spools, onUpdate }) => {
           <Divider sx={{ my: 2.5 }} />
 
           <Stack alignItems="center">
+            <input
+              ref={zipInputRef}
+              type="file"
+              accept=".zip,application/zip"
+              style={{ display: 'none' }}
+              onChange={handleZipFile}
+            />
             <Button
               variant="contained"
               size="large"
