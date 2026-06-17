@@ -30,7 +30,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 
 import WarehouseIcon from '@mui/icons-material/Warehouse';
-import { useTranslation } from '../../i18n/I18nProvider';
+import { useTranslation } from '../../i18n/useTranslation';
 
 export type AppTab = 'calculator' | 'warehouse' | 'spools' | 'printers' | 'history' | 'profit' | 'settings';
 

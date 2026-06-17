@@ -19,7 +19,7 @@ import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
 import TuneIcon from '@mui/icons-material/Tune';
 import type { PrintCalculationResult, PrintCalculationInput, SpoolProfile, PrinterProfile } from '../../types';
 import { formatMoney, roundPrice } from '../../utils/calculations';
-import { useTranslation } from '../../i18n/I18nProvider';
+import { useTranslation } from '../../i18n/useTranslation';
 
 interface StatCardProps {
   label: string;

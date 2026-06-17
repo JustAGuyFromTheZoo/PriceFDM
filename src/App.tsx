@@ -30,7 +30,7 @@ import CalculateIcon from '@mui/icons-material/Calculate';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { getTheme } from './theme';
 import { I18nProvider } from './i18n/I18nProvider';
-import { useTranslation } from './i18n/I18nProvider';
+import { useTranslation } from './i18n/useTranslation';
 import { translations } from './i18n/translations';
 import type { AppSettings, PrintCalculationInput, Project, SavedCalculation, SpoolProfile, PrinterProfile, ProfitEntry, WarehouseItem } from './types';
 import Layout, { type AppTab } from './components/Layout/Layout';

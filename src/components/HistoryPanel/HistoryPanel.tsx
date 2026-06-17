@@ -50,7 +50,7 @@ import type { Project, SavedCalculation } from '../../types';
 const COLOR_PALETTE = ['#ef4444','#f97316','#eab308','#22c55e','#3b82f6','#8b5cf6','#ec4899','#6b7280'];
 import { formatMoney } from '../../utils/calculations';
 import ConfirmDialog from '../common/ConfirmDialog';
-import { useTranslation } from '../../i18n/I18nProvider';
+import { useTranslation } from '../../i18n/useTranslation';
 
 // ─── Кошт-лист: вспомогательные функции ─────────────────────────────────────
 

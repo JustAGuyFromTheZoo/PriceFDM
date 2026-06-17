@@ -32,7 +32,7 @@ import type { SpoolProfile, PlasticType } from '../../types';
 import ConfirmDialog from '../common/ConfirmDialog';
 import { generateId } from '../../utils/storage';
 import { parseFilamentPresetsZip, presetToSpool, type FilamentPresetRecord } from '../../utils/filamentPresets';
-import { useTranslation } from '../../i18n/I18nProvider';
+import { useTranslation } from '../../i18n/useTranslation';
 
 const PLASTIC_TYPES: PlasticType[] = ['PLA', 'PETG', 'ABS', 'TPU', 'Nylon', 'Другой'];
 

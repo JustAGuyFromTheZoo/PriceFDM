@@ -23,7 +23,7 @@ import PrintIcon from '@mui/icons-material/Print';
 import type { PrinterProfile } from '../../types';
 import ConfirmDialog from '../common/ConfirmDialog';
 import { generateId } from '../../utils/storage';
-import { useTranslation } from '../../i18n/I18nProvider';
+import { useTranslation } from '../../i18n/useTranslation';
 
 interface PrinterDialogProps {
   open: boolean;

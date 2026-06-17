@@ -23,7 +23,7 @@ import UploadIcon from '@mui/icons-material/Upload';
 import type { AppSettings, SpoolProfile, PrinterProfile, SavedCalculation, Project, ProfitEntry, WarehouseItem } from '../../types';
 import { DEFAULT_SETTINGS } from '../../utils/defaults';
 import { exportAllData, parseBackup, type BackupData } from '../../utils/storage';
-import { useTranslation } from '../../i18n/I18nProvider';
+import { useTranslation } from '../../i18n/useTranslation';
 
 interface Props {
   settings: AppSettings;

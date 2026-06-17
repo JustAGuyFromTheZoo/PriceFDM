@@ -41,7 +41,7 @@ import WarehouseIcon from '@mui/icons-material/Warehouse';
 import type { PrintCalculationInput, SpoolProfile, PrinterProfile, ProcessingItem, PlasticType, WarehouseItem } from '../../types';
 import { COMPLEXITY_OPTIONS } from '../../utils/defaults';
 import { parseGcode } from '../../utils/gcode';
-import { useTranslation } from '../../i18n/I18nProvider';
+import { useTranslation } from '../../i18n/useTranslation';
 
 /** Нормализует тип пластика из G-code в PlasticType */
 function normalizePlasticType(ft: string): PlasticType {

@@ -44,7 +44,7 @@ import { formatMoney } from '../../utils/calculations';
 import { generateId } from '../../utils/storage';
 import ConfirmDialog from '../common/ConfirmDialog';
 import NumberField from '../common/NumberField';
-import { useTranslation } from '../../i18n/I18nProvider';
+import { useTranslation } from '../../i18n/useTranslation';
 
 type SortKey = 'label' | 'quantity' | 'baseCostPerPiece' | 'salePricePerPiece' | 'revenue' | 'profit';
 type SortDir = 'asc' | 'desc';

@@ -1,16 +1,7 @@
-import React, { createContext, useContext } from 'react';
+import React from 'react';
 import type { AppLanguage } from '../types';
-import { translations, type TranslationKeys } from './translations';
-
-interface I18nContext {
-  t: TranslationKeys;
-  lang: AppLanguage;
-}
-
-const Context = createContext<I18nContext>({
-  t: translations.ru,
-  lang: 'ru',
-});
+import { I18nContext } from './I18nContext';
+import { translations } from './translations';
 
 interface Props {
   lang: AppLanguage;
@@ -18,11 +9,7 @@ interface Props {
 }
 
 export const I18nProvider: React.FC<Props> = ({ lang, children }) => (
-  <Context.Provider value={{ t: translations[lang], lang }}>
+  <I18nContext.Provider value={{ t: translations[lang], lang }}>
     {children}
-  </Context.Provider>
+  </I18nContext.Provider>
 );
-
-export function useTranslation(): I18nContext {
-  return useContext(Context);
-}
