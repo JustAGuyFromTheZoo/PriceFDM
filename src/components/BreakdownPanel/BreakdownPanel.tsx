@@ -82,7 +82,7 @@ const BreakdownPanel: React.FC<Props> = ({ result, input }) => {
             {t.calc_complexity}
           </Typography>
           <Typography variant="body2" fontWeight={700} color="primary.main">
-            {result.complexityLabel} <Typography component="span" variant="caption" color="primary">×{result.complexityCoefficient}</Typography>
+            {result.complexityLabel}{'\u00A0'}<Typography component="span" variant="caption" color="primary">×{result.complexityCoefficient}</Typography>
           </Typography>
         </Stack>
         {result.complexityCoefficient > 1 && (
